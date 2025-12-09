@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="homepage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="activities">
+        <div class="head">
+            <a href="user's info.html">
+            <img src="images/user-hexagon.png" class="user">
+            <p class="username" id="nameInput"></p>
+            </a>
+            <img src="images/cog.png" class="setting">
+        </div>
+        <div class="content-wrapper">
+        <div class="UA">
+            <li class="ya">Your Activities</li>
+            <div class="yai">
+                <p class="yai1">Community Cleanup</p>
+                    <p class="yai2">Position: Central Park</p>
+                    <p class="yai3">Time: Sat, 10:00 AM - 2:00 PM</p>
+                    <p>Introduction: Help clean up the park and plant new trees for our community</p>
+            </div>
+            <div class="ua1">
+                <p class="ua1i">Book Club Meeting</p>
+                    <p class="ua1p">Position: Community Center</p>
+                    <p>Time: Sun, 3:00 PM - 5:00 PM</p>
+                    <p>Introduction: Discussing "The Great Gatsby" this month</p>
+            </div>
+            <div class="ua2">
+                <p>Volunteer Teaching</p>
+                    <p>Position: Westside School</p>
+                    <p>Time: Every Tue, 4:00 PM - 6:00 PM</p>
+                    <p>Introduction: Helping students with their homework and reading skills</p>
+                
+            </div>
+            <li class="yar">Read More</li>
+        </div>
+        <ul class="else">
+            <div class="ea1">
+                    <li>Beach Cleanup Drive</li>
+                    <p>Position: Ocean Beach</p>
+                    <p>Time: Sat, 9:00 AM - 1:00 PM</p>
+                    <p>Introduction: Join us to clean the beach and protect marine life</p>
+                </div>
+                
+                <div class="ea2">
+                    <li>Food Bank Volunteer</li>
+                    <p>Position: City Food Bank</p>
+                    <p>Time: Sun, 10:00 AM - 1:00 PM</p>
+                    <p>Introduction: Help pack food for families in need</p>
+                </div>
+                
+                <div class="ea3">
+                    <li>Senior Center Visit</li>
+                    <p>Position: Golden Years Home</p>
+                    <p>Time: Sat, 2:00 PM - 4:00 PM</p>
+                    <p>Introduction: Spend time with seniors, read stories, and chat</p>
+                </div>  
+            </ul>
+            </div>  
+        </ul>
+    </div>
+</div>
+        <div class="under">
+            <img src="images/home-alt.png"class="st1" alt="Home">
+            <img src="images/browser-activity.png" class="st2" alt="Activities">
+            <a href="user's info.html">
+            <img src="images/group.png" class="st3" alt="Profile">
+            </a>
+        </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userNameElement = document.getElementById('nameInput');
+            const userName = localStorage.getItem('username') || 'Community Member';
+            userNameElement.textContent = userName;
+        });
+    </script>
+    </body>
+</html>
